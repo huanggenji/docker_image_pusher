@@ -1,6 +1,10 @@
-nginx
-#支持私库
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-xhofe/alist:latest
-#支持指定架构
---platform=linux/arm64 xiaoyaliu/alist
+# 方舟AI产研协同开发平台 —— 需转发到阿里云ACR的 7 个镜像
+# 用法：把下面 7 行（不含注释也行）整段粘贴进 tech-shrimp/docker_image_pusher 仓库根的 images.txt，提交即触发转发。
+# 备注：默认面向 amd64(x86_64) 服务器，无需 --platform；若测试服务器是 ARM 架构，再在每行后加 --platform=linux/arm64。
+pgvector/pgvector:pg16
+cassandra:5
+searxng/searxng:latest
+maven:3.9-eclipse-temurin-21
+eclipse-temurin:21-jre-alpine
+node:20-alpine
+nginx:alpine
