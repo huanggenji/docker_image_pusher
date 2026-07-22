@@ -8,7 +8,7 @@ maven:3.9-eclipse-temurin-21
 eclipse-temurin:21-jre-alpine
 node:20-alpine
 nginx:alpine
-nacos/nacos-server:v3.2.2
-redis:7.4-alpine
-mysql:8.4
-xuxueli/xxl-job-admin:3.4.2
+--platform=linux/arm64 nacos/nacos-server:v3.2.2
+--platform=linux/arm64 redis:7.4-alpine
+--platform=linux/arm64 mysql:8.4
+--platform=linux/arm64 xuxueli/xxl-job-admin:3.4.2
